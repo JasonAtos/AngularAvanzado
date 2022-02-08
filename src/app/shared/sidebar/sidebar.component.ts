@@ -18,6 +18,24 @@ export class SidebarComponent implements OnInit {
     }
 
   ngOnInit(): void {
+    const promesa = new Promise((resolve, reject) => {
+      
+      // if(false) resolve('hola banda');
+      // else reject('algo fallo')
+    });
+
+    promesa.then((mnesaje) => {
+      console.log(mnesaje);      
+    })
+    .catch(erro => console.log(erro)
+    )
+    // console.log('fin init');
   }
+
+  getUsuario(){
+    fetch
+  }
+
+  
 
 }
